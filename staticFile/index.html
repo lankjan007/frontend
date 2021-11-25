@@ -1,11 +1,83 @@
-import React from "react";
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello, I'm Irene.</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/gifs/logo.png"
+      type="image/x-icon"
+    />
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 
-function App() {
-  return (
-      <>
-      {/* Header */}
-      <header>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="elfsight-app-26b8474e-b895-411f-b9c4-ab8d732f0aed"></div>
+
+    <header>
       <div class="container">
+        <!-- SMALL DEVICE -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="small">
+            <div class="smallLogo">
+              <a href="index.html"
+                ><img src="./assets/images/gifs/logo2.png" alt="Logo"
+              /></a>
+            </div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+              <li><a href="./template/portifolio.html">Portifolio</a></li>
+            </ul>
+            <div class="smallMedia">
+              <a href="https://www.facebook.com/irene.mmassy.1466"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/minaheryy/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/laura-irene-paul"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="https://www.behance.net/laummassy01ce"
+                ><i class="fab fa-behance"></i
+              ></a>
+              <a href="https://github.com/irenemmassy"
+                ><i class="fab fa-github-alt"></i
+              ></a>
+            </div>
+            <p>
+              Check out my articles, React and React Native UI components at the
+              code laboratory.
+            </p>
+          </div>
+        </div>
+        <!-- END SMALL DEVICE -->
         <div class="nav">
           <div class="nav1"></div>
           <div class="nav2">
@@ -13,15 +85,18 @@ function App() {
             <div class="menu"><a href="#services">services</a></div>
             <div class="menu"><a href="#">Blogs</a></div>
             <div class="menu">
-              <a href="./template/portifolio.html">Portfolio</a>
+              <a href="./template/portifolio.html">Portifolio</a>
             </div>
             <div class="menu"><a href="#contact">contact Me</a></div>
           </div>
+          <!-- opensmall -->
+          <div id="opened" onclick="openNav()">&#9776;</div>
+          <!-- opensmall -->
         </div>
       </div>
     </header>
-    
-    {/* HOME SCREEN */}
+
+    <!-- HOME SCREEN -->
     <div class="Mainbackground" id="home">
       <div class="topBackground"></div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -63,7 +138,7 @@ function App() {
         </div>
       </div>
     </div>
-    {/* SERVICES */}
+
     <div class="section" id="services">
       <div class="container rows">
         <div class="tab">
@@ -106,7 +181,7 @@ function App() {
               <div class="sectionBox">
                 <div class="sectionImage">
                   <img
-                    src="images/img2.svg"
+                    src="./assets/images/img2.svg"
                     alt="Mobile Development"
                   />
                 </div>
@@ -122,7 +197,7 @@ function App() {
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
                 <div class="sectionImage">
-                  <img src="images/img3.png" alt="PWA development" />
+                  <img src="./assets/images/img3.png" alt="PWA development" />
                 </div>
                 <div class="sectionWords">
                   <h4>PWA development</h4>
@@ -137,7 +212,7 @@ function App() {
               <div class="sectionBox">
                 <div class="sectionImage">
                   <img
-                    src="images/img6.svg"
+                    src="./assets/images/img6.svg"
                     alt="Cross-Platform App"
                   />
                 </div>
@@ -153,7 +228,7 @@ function App() {
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
                 <div class="sectionImage">
-                  <img src="images/img4.svg" alt="UX/UI Designs" />
+                  <img src="./assets/images/img4.svg" alt="UX/UI Designs" />
                 </div>
                 <div class="sectionWords">
                   <h4>UX/UI Designs</h4>
@@ -167,7 +242,7 @@ function App() {
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
                 <div class="sectionImage">
-                  <img src="images/img5.svg" alt="Digital Marketing" />
+                  <img src="./assets/images/img5.svg" alt="Digital Marketing" />
                 </div>
                 <div class="sectionWords">
                   <h4>Digital Marketing</h4>
@@ -185,7 +260,7 @@ function App() {
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
                 <div class="sectionImage">
-                  <img src="images/img7.svg" alt="blockchain" />
+                  <img src="./assets/images/img7.svg" alt="blockchain" />
                 </div>
                 <div class="sectionWords">
                   <h4>Mobile Development</h4>
@@ -202,7 +277,7 @@ function App() {
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
                 <div class="sectionImage">
-                  <img src="images/img8.svg" alt="blockchain" />
+                  <img src="./assets/images/img8.svg" alt="blockchain" />
                 </div>
                 <div class="sectionWords">
                   <h4>UX/UI Designs</h4>
@@ -219,7 +294,7 @@ function App() {
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
                 <div class="sectionImage">
-                  <img src="images/img9.svg" alt="blockchain" />
+                  <img src="./assets/images/img9.svg" alt="blockchain" />
                 </div>
                 <div class="sectionWords">
                   <h4>Web Development</h4>
@@ -236,7 +311,7 @@ function App() {
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
                 <div class="sectionImage">
-                  <img src="images/img10.svg" alt="blockchain" />
+                  <img src="./assets/images/img10.svg" alt="blockchain" />
                 </div>
                 <div class="sectionWords">
                   <h4>E-commerce</h4>
@@ -252,7 +327,7 @@ function App() {
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
                 <div class="sectionImage">
-                  <img src="images/img11.svg" alt="blockchain" />
+                  <img src="./assets/images/img11.svg" alt="blockchain" />
                 </div>
                 <div class="sectionWords">
                   <h4>Server Side</h4>
@@ -272,7 +347,7 @@ function App() {
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
                 <div class="sectionImage">
-                  <img src="images/img12.svg" alt="blockchain" />
+                  <img src="./assets/images/img12.svg" alt="blockchain" />
                 </div>
                 <div class="sectionWords">
                   <h4>Construction</h4>
@@ -286,7 +361,7 @@ function App() {
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
                 <div class="sectionImage">
-                  <img src="images/img13.svg" alt="blockchain" />
+                  <img src="./assets/images/img13.svg" alt="blockchain" />
                 </div>
                 <div class="sectionWords">
                   <h4>Healthcare</h4>
@@ -300,7 +375,7 @@ function App() {
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
                 <div class="sectionImage">
-                  <img src="images/img14.svg" alt="blockchain" />
+                  <img src="./assets/images/img14.svg" alt="blockchain" />
                 </div>
                 <div class="sectionWords">
                   <h4>Retail & ECommerce</h4>
@@ -313,7 +388,7 @@ function App() {
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
                 <div class="sectionImage">
-                  <img src="images/img15.svg" alt="blockchain" />
+                  <img src="./assets/images/img15.svg" alt="blockchain" />
                 </div>
                 <div class="sectionWords">
                   <h4>FinTech</h4>
@@ -327,7 +402,7 @@ function App() {
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
                 <div class="sectionImage">
-                  <img src="images/img16.svg" alt="blockchain" />
+                  <img src="./assets/images/img16.svg" alt="blockchain" />
                 </div>
                 <div class="sectionWords">
                   <h4>Travel & Hospitality</h4>
@@ -356,7 +431,7 @@ function App() {
         </div>
       </div>
     </div>
-    {/* ABOUT */}
+
     <section id="about">
       <div class="container">
         <div class="row">
@@ -398,8 +473,8 @@ function App() {
         </div>
       </div>
     </section>
-    {/* CONTACT */}
-    <div class="contact me" id="contact">
+
+    <div class="contactme" id="contact">
       <div class="contactOverlay">
         <div class="container">
           <div class="form">
@@ -426,14 +501,14 @@ function App() {
                 <br />
                 <button>SUBMIT</button>
 
-                {/* <div class="row">{showResults ? <Results /> : null}</div> */}
+                <div class="row">{showResults ? <Results /> : null}</div>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    {/* RECENT WORK */}
+
     <div class="container" id="blogs">
       <div class="article">
         <h2>Recent Work</h2>
@@ -441,8 +516,8 @@ function App() {
         <div class="rows">
           <div class="shop col-lg-3 col-md-4 col-sm-6">
             <div class="shopBack">
-              <img src="images/recent1.png" alt="recent" />
-              <div class="shoplabel">
+              <img src=./assets/images/recent1.png alt="recent" />
+              <div class="shoplebal">
                 <a href="#">Read More</a>
               </div>
             </div>
@@ -457,12 +532,13 @@ function App() {
         </div>
       </div>
     </div>
-    {/* FOOTER */}
+    <!-- HOME SCREEN END -->
+    <!-- FOOTER -->
     <footer>
       <div class="container">
         <div class="footerContainer">
           <div class="footerLogo">
-            <img src="images/gifs/logo2.png" alt="Logo" />
+            <img src="./assets/images/gifs/logo2.png" alt="Logo" />
           </div>
           <div class="footerNav">
             <p><a href="#about">About me</a></p>
@@ -502,8 +578,9 @@ function App() {
         </div>
       </div>
     </footer>
-    </>
-  );
-}
-
-export default App;
+    <!-- FOOTER END -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
